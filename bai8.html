@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let range = parseInt(prompt(" Nhập phạm vi dự đoán:"));
+        let number = parseInt(prompt(" Nhập vào số dự đoán"));
+        let radom;
+        
+        radom= parseInt( Math.random() * range);
+        console.log(radom);
+
+        while(number != radom){
+            if( number<radom){
+                alert(" Số dự đoán nhỏ hơn số ngẫu nhiên")
+            }
+            else{
+                alert(" Số dự đoán lớn hơn số ngẫu nhiên")
+            }
+            number = parseInt(prompt(" Nhập lại số dự đoán"));
+        }
+        alert(" Chúc mừng ")
+    </script>
+</body>
+</html>
